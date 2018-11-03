@@ -53,7 +53,15 @@ nav {
 	color: white;
 	text-decoration: none;
 }
-
+.nav-item{
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+	width: 150px;
+	text-align: center;
+}
+.active{
+	border-bottom: 3px solid red;
+}
 .nav-link:hover, nav>a:hover {
 	color: black;
 	background-color: white;
