@@ -1,0 +1,21 @@
+nav {
+	background-color: black;
+}
+
+.nav-link, nav > a {
+	color: white;
+}
+
+.nav-link:hover, nav>a:hover {
+	color: black;
+	background-color: white;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: black;
+	color: white;
+}
