@@ -21,9 +21,49 @@
         crossorigin="anonymous"></script>
 
 </head>
+<style>
+    .bg-cover{
+    background-image: url("https://www.nysenate.gov/sites/default/files/flag_banner_01.jpg");
+    background-size: cover;
+    color: white;
+    text-shadow: 0px 0px 8px black;
+    background-position: center center;
+    position: relative;
+    border-radius: 0px!important;
+    z-index: -2;
+  }
+  .content{
+      margin:50px 50px 50px 50px
+  }
+  .center{
+      text-align: center;
+      align-content: center;
+  }
+  img{
+      height: 200px;
+      object-fit: scale-down;
+  }
+  .card{
+      height: 400px;
+      padding-bottom: 30px;
+  }
+  .xxx{
+      /* margin-bottom: 30px; */
+  }
+  .border{
+      border-right-width: 1px;
+      border-right-color: black;
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  hr{
+      background-color: black;
+  }
+</style>
 
 <body>
     <!-- NavBar -->
+
     <nav class="navbar navbar-expand-lg bgnav">
         <a class="navbar-brand" href="index.html">Everyday Politics</a>
         <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -35,7 +75,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="execpage.html">Executive Branch</a>
                 </li>
                 <li class="nav-item ">
@@ -47,71 +87,162 @@
                 <li class="nav-item">
                     <a class="nav-link" href="upcomingevents.html">Upcoming Events</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="politicaleducation.html">Political Education</a>
                 </li>
             </ul>
         </div>
     </nav>
+    <div class="jumbotron jumbotron bg-cover">
+        <div class="overlay-jumbo"></div>
+        <div class="container">
+            <h1 class="display-3 mb-1">Party Comparison</h1>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <!-- Row -->
+            <div class="row">
+                <div class="col-sm border center">
+                    <!-- https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/uh59Wh0/idea-in-human-head-arrow-1-cartoon-illustration-hand-drawn-animation-transparent_nkbejwu__F0004.png -->
+                    <img class="card-img-top" src="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/uh59Wh0/idea-in-human-head-arrow-1-cartoon-illustration-hand-drawn-animation-transparent_nkbejwu__F0004.png"
+                        alt="Dems">
+                    <h3>Belief</h3>
+                </div>
+                <div class="col-sm border center">
+                    <img class="card-img-top" src="https://static.diffen.com/uploadz/9/9b/Democratic-2.jpg" alt="Dems">
+                    <h3>Demoncrats</h3>
+                </div>
+                <div class="col-sm border center">
+                    <img class="card-img-top" src="https://static.diffen.com/uploadz/8/8e/Republican-2.jpg" alt="GOP">
+                    <h3>Republicans</h3>
+                </div>
+            </div>
+            <div class="row center xxx">
+                <div class="col-sm border"><strong>
+                        Philosophy
+                    </strong></div>
+                <div class="col-sm border">
+                    Liberal, left-leaning.
+                </div>
+                <div class="col-sm border">
+                    Conservative, right-leaning.
+                </div>
+            </div>
+            <div class="row center xxx">
+                <div class="col-sm border"><strong>
+                        Economic Ideas
+                    </strong></div>
+                <div class="col-sm border">
+                    Minimum wages and progressive taxation, i.e., higher tax rates for higher income brackets. Born out
+                    of anti-federalist ideals but evolved over time to favor more government regulation.
+                </div>
+                <div class="col-sm border">
+                    Believe taxes shouldn't be increased for anyone (including the wealthy) and that wages should be
+                    set by the free market.
+                </div>
+            </div>
+            <div class="row center xxx">
+                <div class="col-sm border"><strong>
+                        Social and human ideas
+                    </strong></div>
+                <div class="col-sm border">
+                    Based on community and social responsibility
+                </div>
+                <div class="col-sm border">
+                    Based on individual rights and justice
+                </div>
+            </div>
+            <!-- End -->
+            <div class="row center xxx">
+                <div class="col-sm border"><strong>
+                        Stance on Military issues
+                    </strong></div>
+                <div class="col-sm border">
+                    Decreased spending
+                </div>
+                <div class="col-sm border">
+                    Increased spending
+                </div>
+            </div>
+            <!-- End -->
+            <div class="row center xxx">
+                <div class="col-sm border"><strong>
+                        Stance on Gay Marriage
+                    </strong></div>
+                <div class="col-sm border">
+                    Support (some Democrats disagree)
+                </div>
+                <div class="col-sm border">
+                    Oppose (some Republicans disagree)
+                </div>
+            </div>
+            <!-- End -->
+            <div class="row center xxx">
+                <div class="col-sm border"><strong>
+                        Stance on Abortion
+                    </strong></div>
+                <div class="col-sm border">
+                    Should remain legal
+                </div>
+                <div class="col-sm border">
+                    Should not be legal (with some exceptions)
+                </div>
+            </div>
+            <!-- End -->
+            <div class="row center xxx">
+                <div class="col-sm border"><strong>
+                        Stance on Death Penalty
+                    </strong></div>
+                <div class="col-sm border">
+                    While support for the death penalty is strong among Democrats, opponents of the death penalty are a
+                    substantial fraction of the Democratic base.
+                </div>
+                <div class="col-sm border">
+                    A large majority of Republicans support the death penalty.
+                </div>
+            </div>
+            <!-- End -->
+            <div class="row center xxx">
+                <div class="col-sm border"><strong>
+                        Stance on Taxes
+                    </strong></div>
+                <div class="col-sm border">
+                        Progressive (high income earners should be taxed at a higher rate). Generally not opposed to raising taxes to fund government.
+                </div>
+                <div class="col-sm border">
+                        Tend to favor a "flat tax" (same tax rate regardless of income). Generally opposed to raising taxes.
+                </div>
+            </div>
+            <!-- End -->
+            <div class="row center xxx">
+                <div class="col-sm border"><strong>
+                        Stance on Abortion
+                    </strong></div>
+                <div class="col-sm border">
+                    Should remain legal
+                </div>
+                <div class="col-sm border">
+                    Should not be legal (with some exceptions)
+                </div>
+            </div>
+            <!-- End -->
+            <div class="row center xxx">
+                <div class="col-sm border"><strong>
+                        Stance on Abortion
+                    </strong></div>
+                <div class="col-sm border">
+                    Should remain legal
+                </div>
+                <div class="col-sm border">
+                    Should not be legal (with some exceptions)
+                </div>
+            </div>
+            <!-- End -->
+            <!-- End row -->
+        </div>
 
-    <article style="width: 75%; margin-left: auto; margin-right: auto; margin-top: 15px; margin-bottom: 15px;">
-        <h1>Political Education</h1>
-        <p>It is very important to be involved in local, state, and federal politics.</p>
-
-        <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas.
-            Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
-            semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien
-            ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi.
-            Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a
-                href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
-        
-        <h2>Header Level 2</h2>
-        
-        <ol>
-            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-            <li>Aliquam tincidunt mauris eu risus.</li>
-        </ol>
-        
-        <blockquote>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a
-                est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est
-                malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
-        </blockquote>
-        
-        <h3>Header Level 3</h3>
-        
-        <ul>
-            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-            <li>Aliquam tincidunt mauris eu risus.</li>
-        </ul>
-        <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas.
-            Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
-            semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien
-            ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi.
-            Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a
-                href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
-        
-        <h2>Header Level 2</h2>
-        
-        <ol>
-            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-            <li>Aliquam tincidunt mauris eu risus.</li>
-        </ol>
-        
-        <blockquote>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a
-                est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est
-                malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
-        </blockquote>
-        
-        <h3>Header Level 3</h3>
-        
-        <ul>
-            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-            <li>Aliquam tincidunt mauris eu risus.</li>
-        </ul>
-    </article>
-
+    </div>
 </body>
 <footer class="page-footer font-small blue">
 
