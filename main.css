@@ -1,3 +1,10 @@
+body, html {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
 nav {
 	background-color: black;
 }
@@ -9,6 +16,10 @@ nav {
 .nav-link:hover, nav>a:hover {
 	color: black;
 	background-color: white;
+}
+
+.container {
+	width: 100%;
 }
 
 footer {
