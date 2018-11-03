@@ -13,12 +13,8 @@
     <meta name="author" content="Mattc">
 
     <link rel="stylesheet" href="main.css" />
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <!-- calender sheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css" />
 </head>
 
 <body>
@@ -52,7 +48,124 @@
             </ul>
         </div>
     </nav>
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog modal-newsletter">
+            <div class="modal-content">
+                <form action="/examples/actions/confirmation.php" method="post">
+                    <div class="modal-header">
+                        <h4>Subscribe to our newsletter</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span style="position: absolute; top: 8px; right: 10px;">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Signup for our weekly newsletter to get the latest news, updates and amazing offers
+                            delivered directly in your inbox.</p>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email" required>
+                            <span class="input-group-btn">
+                                <input type="submit" class="btn btn-primary" value="Subscribe">
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div id="calendar"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.js"></script>
+    <!-- End Nav Bar -->
+    <script>
+        $(function () {
+
+            // page is now ready, initialize the calendar...
+
+            $('#calendar').fullCalendar({
+                // put your options and callbacks here
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'month,basicWeek,basicDay'
+                },
+                defaultDate: '2018-11-3',
+                navLinks: true, // can click day/week names to navigate views
+                editable: true,
+                eventLimit: true, // allow "more" link when too many events
+                events: [
+                    {
+                        title: 'Hero Day',
+                        start: '2018-11-3'
+                    },
+                    {
+                        title: 'Power Week',
+                        start: '2018-10-22',
+                        end: '2018-10-26'
+                    },
+                    {
+                        id: 999,
+                        title: 'Special Recess',
+                        start: '2018-10-09T16:00:00'
+                    },
+                    {
+                        id: 999,
+                        title: 'Special Recess',
+                        start: '2018-10-16T16:00:00'
+                    },
+                    {
+                        title: 'Conference Days',
+                        start: '2018-10-11',
+                        end: '2018-10-13'
+                    },
+                    {
+                        title: 'Meeting',
+                        start: '2018-10-12T10:30:00',
+                        end: '2018-10-12T12:30:00'
+                    },
+                    {
+                        title: 'Special Lunch',
+                        start: '2018-10-12T12:00:00'
+                    },
+                    {
+                        title: 'Meeting',
+                        start: '2018-10-12T14:30:00'
+                    },
+                    {
+                        title: 'Hero Hour',
+                        start: '2018-10-12T17:30:00'
+                    },
+                    {
+                        title: 'Special Dinner',
+                        start: '2018-10-12T20:00:00'
+                    },
+                    {
+                        title: 'Hero Party',
+                        start: '2018-10-13T07:00:00'
+                    },
+                    {
+                        title: 'Heroween',
+                        start: '2018-10-31'
+                    }
+                ]
+            });
+
+        });
+    </script>
+
 </body>
+
+<!-- Footer -->
 <footer class="page-footer font-small blue">
 
     <div class="footer-copyright text-center py-2">© 2018 Copyright: Everyday Politics
