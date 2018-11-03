@@ -3,6 +3,7 @@ body, html {
 	width: 100%;
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
 }
 
 .container {
@@ -56,4 +57,10 @@ nav {
 .nav-link:hover, nav>a:hover {
 	color: black;
 	background-color: white;
+}
+
+.suppc {
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
 }
