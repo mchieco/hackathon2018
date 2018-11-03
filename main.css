@@ -5,19 +5,6 @@ body, html {
 	padding: 0;
 }
 
-nav {
-	background-color: black;
-}
-
-.nav-link, nav > a {
-	color: white;
-}
-
-.nav-link:hover, nav>a:hover {
-	color: black;
-	background-color: white;
-}
-
 .container {
 	width: 100%;
 }
@@ -29,4 +16,35 @@ footer {
 	right: 0;
 	background-color: black;
 	color: white;
+}
+
+a {
+	color: black;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: white;
+	background-color: black;
+	text-decoration: none;
+}
+
+code {
+	color: black;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 2px;
+}
+
+nav {
+	background-color: black;
+}
+
+.nav-link, nav > a {
+	color: white;
+	text-decoration: none;
+}
+
+.nav-link:hover, nav>a:hover {
+	color: black;
+	background-color: white;
 }
